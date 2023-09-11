@@ -1,3 +1,12 @@
+// To DO
+// set up post 
+// authentificatin middle wear
+// forms and pass from client to server
+// routes to different pages
+//  add ejs footer
+
+
+
 import express from "express";
 import bodyParser from "body-parser";
 
