@@ -40,7 +40,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 //#region ============================================== 
 
 app.get("/", (req, res) => {
-    res.render(__dirname + "/views/homepage.ejs")
+    res.render(__dirname + "/views/homepage.ejs",
+    res.locals = {time: getDateTimeNow()})
 })
 
 app.listen(port, (req, res) => {
