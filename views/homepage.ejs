@@ -9,7 +9,19 @@
 <body>
     <h1>Homepage</h1>
     <%=locals.time %>
-    <!-- test  -->
+    <form action="/check" method="POST">
+        <input type="text" name="password" placeholder="Enter Password">
+        <button type="submit"">Enter</button>
+    </form>
+    <h2><% if (locals.message) { %>
+        <%= locals.message %> 
+
+   <% } else { %>
+    <!-- <%= locals.time %> -->
+    <h3>Please enter password</h3>
+  <% } %> 
+    </h2>
+    <%- include('footer.ejs') %>
     
 </body>
 </html>
